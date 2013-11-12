@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: gpel:gpel_client:1.0.7-BETA">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/gpel/gpel_client/1.0.7-BETA/gpel_client-1.0.7-BETA.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/gpel/gpel_client/1.0.7-BETA/gpel_client-1.0.7-BETA-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/gpel/gpel_client/1.0.7-BETA/gpel_client-1.0.7-BETA-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

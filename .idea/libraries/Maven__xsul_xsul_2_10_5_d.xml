@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: xsul:xsul:2.10.5_d">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/xsul/xsul/2.10.5_d/xsul-2.10.5_d.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/xsul/xsul/2.10.5_d/xsul-2.10.5_d-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/xsul/xsul/2.10.5_d/xsul-2.10.5_d-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

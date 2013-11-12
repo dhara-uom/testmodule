@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: xpp3:xpp3:1.1.3_7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3/1.1.3_7/xpp3-1.1.3_7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3/1.1.3_7/xpp3-1.1.3_7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3/1.1.3_7/xpp3-1.1.3_7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

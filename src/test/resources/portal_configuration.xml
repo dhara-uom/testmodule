@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server-configurations>
+    <airavata-configuration>
+        <server>
+            <username>admin</username>
+            <password>admin</password>
+            <message-box></message-box>
+            <gateway-name>default</gateway-name>
+            <port>8080</port>
+            <server-context>airavata-registry</server-context>
+            <server-url>localhost</server-url>
+            <broker></broker>
+            <jcr></jcr>
+            <gfac></gfac>
+        </server>
+    </airavata-configuration>
+    <backend-configuration>
+        <server>
+            <username>http://localhost:8090/portal</username>
+            <password>admin</password>
+            <server-url>admin</server-url>
+        </server>
+    </backend-configuration>
+    <wps-52north-configuration>
+        <server>
+            <username>admin</username>
+            <password>admin</password>
+            <server-url>http://localhost:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/DynamicDeployProcesstest.jsp</server-url>
+        </server>
+    </wps-52north-configuration>
+</server-configurations>
