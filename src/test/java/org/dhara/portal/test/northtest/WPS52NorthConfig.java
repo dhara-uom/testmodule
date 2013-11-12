@@ -23,6 +23,7 @@ public class WPS52NorthConfig {
     private  String serverUrl;
     private  String userName;
     private  String password;
+    public static final String defaultPackage ="package org.dhara.wps;";
 
 
     public WPS52NorthConfig() throws PortalException {

@@ -14,7 +14,7 @@
     <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384226814887" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/compiler.xml" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384224868674" ignored="false" />
     <file path="/portal_configuration.xml" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384229497024" ignored="false" />
-    <file path="/fragment.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384244405198" ignored="false" />
+    <file path="/fragment.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384250065903" ignored="false" />
     <file path="/AiravataConfig.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384232340972" ignored="false" />
     <file path="/pom.xml" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384229006886" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384229140572" ignored="false" />
@@ -111,9 +111,11 @@
     <file path="$PROJECT_DIR$/../../portal-new-rav/rave_portal/dharaportalproject/dharaportalproject-portal/src/main/java/org/dhara/portal/web/restClientService/RestResourceUtils.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384239071353" ignored="false" />
     <file path="$PROJECT_DIR$/../../portal-new-rav/rave_portal/dharaportalproject/dharaportalproject-portal/src/main/java/org/dhara/portal/web/restClientService/RestServiceConfig.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384239071353" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/java/test/exception/PortalException.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384244435691" ignored="false" />
-    <file path="$PROJECT_DIR$/src/test/java/org/dhara/portal/test/exception/PortalException.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384244488603" ignored="false" />
     <file path="/WorkflowManager.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384245423461" ignored="false" />
     <file path="/AiravataWorkflowExecutionTest.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384247968233" ignored="false" />
+    <file path="/WPS52Manager.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384250423663" ignored="false" />
+    <file path="/WPS52NorthConfig.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384250234821" ignored="false" />
+    <file path="/WPS52NorthUploadClassTest.java" changelist="6b098652-4577-4565-992b-cf2b6a2e6147" time="1384250516884" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,15 +229,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonitorListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/airavatatest/MonitorListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="13" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WorkflowManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/airavatatest/WorkflowManager.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -260,7 +253,7 @@
       <file leaf-file-name="AiravataWorkflowExecutionTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/airavatatest/AiravataWorkflowExecutionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="29" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
+            <state line="50" column="19" selection-start="718" selection-end="1796" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -268,20 +261,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/jdk1.6.0_32/src.zip!/java/lang/Class.java">
+      <file leaf-file-name="WPS52Manager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="0" selection-start="6283" selection-end="6283" vertical-scroll-proportion="0.0">
+            <state line="34" column="106" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EchoWorkflow.xwf" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../trunk/samples/airavata-client/workflow-run/src/main/resources/EchoWorkflow.xwf">
+      <file leaf-file-name="WPSNorthServiceConstants.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPSNorthServiceConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="28" selection-start="815" selection-end="815" vertical-scroll-proportion="-1.6470588">
+            <state line="9" column="13" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WPS52NorthConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52NorthConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="4" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WPS52NorthUploadClassTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52NorthUploadClassTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.054446463">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -295,22 +310,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EchoWorkflow.xwf" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EchoWorkflow.xwf" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/EchoWorkflow.xwf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="11" column="23" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MonitorWorkflow.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/airavatatest/MonitorWorkflow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="30" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -325,9 +329,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/portal_configuration.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/dhara/test/AiravataConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/dhara/test/backendtest/RestClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dhara/test/northtest/WPSNorthServiceConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dhara/test/backendtest/RestServiceConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dhara/test/airavatatest/MonitorWorkflow.java" />
@@ -341,6 +342,9 @@
         <option value="$PROJECT_DIR$/src/test/java/org/dhara/portal/test/airavatatest/RunWorkflow.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/dhara/portal/test/airavatatest/WorkflowManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/dhara/portal/test/airavatatest/AiravataWorkflowExecutionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52NorthConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52Manager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52NorthUploadClassTest.java" />
       </list>
     </option>
   </component>
@@ -602,6 +606,66 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="northtest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dharatest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dharatest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dharatest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dharatest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backendtest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -650,32 +714,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dharatest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dharatest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -704,6 +742,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.dhara.portal.test.northtest" />
       <recent name="org.dhara.test.northtest" />
       <recent name="org.dhara.test" />
       <recent name="org.dhara.test.exception" />
@@ -901,7 +940,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="1" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -986,42 +1025,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/backendtest/RestResourceUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/backendtest/RestClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPSNorthServiceConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/backendtest/RestServiceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="55" selection-start="1230" selection-end="1258" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52NorthConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="116" selection-start="1220" selection-end="1309" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,15 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/airavatatest/AiravataWorkflowExecutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="29" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/EchoWorkflow.xwf">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="24" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
@@ -1106,8 +1104,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/EchoWorkflow.xwf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="11" column="23" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPSNorthServiceConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="106" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/airavatatest/AiravataWorkflowExecutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="19" selection-start="718" selection-end="1796" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52NorthConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="4" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52NorthUploadClassTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.054446463">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
