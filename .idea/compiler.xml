@@ -22,11 +22,51 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="airavata-client-api" />
+        <module name="airavata-complex-math-service" />
+        <module name="airavata-credential-store" />
+        <module name="airavata-embedded-tomcat" />
+        <module name="airavata-gfac-core" />
+        <module name="airavata-levenshtein-distance-service" />
+        <module name="airavata-security" />
+        <module name="airavata-simple-math-service" />
+        <module name="airavata-workflow-model-component" />
+        <module name="airavata-workflow-model-component-node" />
+        <module name="airavata-workflow-model-core" />
+        <module name="airavata-xbaya-gui" />
         <module name="dharatest" />
+        <module name="integration-tests" />
+        <module name="samples-create-application" />
+        <module name="samples-workflow-run" />
+        <module name="test-suite" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="airavata" target="1.6" />
+      <module name="airavata-client-api" target="1.6" />
+      <module name="airavata-client-sample" target="1.6" />
+      <module name="airavata-complex-math-service" target="1.6" />
+      <module name="airavata-credential-store" target="1.6" />
+      <module name="airavata-embedded-tomcat" target="1.6" />
+      <module name="airavata-gfac-core" target="1.6" />
+      <module name="airavata-levenshtein-distance-service" target="1.6" />
+      <module name="airavata-security" target="1.6" />
+      <module name="airavata-simple-math-service" target="1.6" />
+      <module name="airavata-tools-parent" target="1.6" />
+      <module name="airavata-workflow-model-component" target="1.6" />
+      <module name="airavata-workflow-model-component-node" target="1.6" />
+      <module name="airavata-workflow-model-core" target="1.6" />
+      <module name="airavata-workflow-model-parent" target="1.6" />
+      <module name="airavata-ws-messenger" target="1.6" />
+      <module name="airavata-xbaya-gui" target="1.6" />
+      <module name="commons" target="1.6" />
+      <module name="distribution" target="1.6" />
+      <module name="integration-tests" target="1.6" />
+      <module name="registry" target="1.6" />
+      <module name="rest" target="1.6" />
+      <module name="samples-create-application" target="1.6" />
+      <module name="samples-workflow-run" target="1.6" />
+      <module name="test-suite" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

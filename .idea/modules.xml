@@ -3,7 +3,31 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../../trunk/airavata.iml" filepath="$PROJECT_DIR$/../../../trunk/airavata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/airavata-client/airavata-client-api.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/airavata-client/airavata-client-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/samples/airavata-client/airavata-client-sample.iml" filepath="$PROJECT_DIR$/../../../trunk/samples/airavata-client/airavata-client-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/samples/complex-math-service/airavata-complex-math-service.iml" filepath="$PROJECT_DIR$/../../../trunk/samples/complex-math-service/airavata-complex-math-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/credential-store/airavata-credential-store.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/credential-store/airavata-credential-store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/server/airavata-embedded-tomcat.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/server/airavata-embedded-tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/gfac-core/airavata-gfac-core.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/gfac-core/airavata-gfac-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/samples/levenshtein-distance-service/airavata-levenshtein-distance-service.iml" filepath="$PROJECT_DIR$/../../../trunk/samples/levenshtein-distance-service/airavata-levenshtein-distance-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/security/airavata-security.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/security/airavata-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/samples/simple-math-service/airavata-simple-math-service.iml" filepath="$PROJECT_DIR$/../../../trunk/samples/simple-math-service/airavata-simple-math-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/tools/airavata-tools-parent.iml" filepath="$PROJECT_DIR$/../../../trunk/tools/airavata-tools-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-component/airavata-workflow-model-component.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-component/airavata-workflow-model-component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-component-node/airavata-workflow-model-component-node.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-component-node/airavata-workflow-model-component-node.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-core/airavata-workflow-model-core.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-core/airavata-workflow-model-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/workflow-model/airavata-workflow-model-parent.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/workflow-model/airavata-workflow-model-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/ws-messenger/airavata-ws-messenger.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/ws-messenger/airavata-ws-messenger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/xbaya-gui/airavata-xbaya-gui.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/xbaya-gui/airavata-xbaya-gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/commons/commons.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/commons/commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/dharatest.iml" filepath="$PROJECT_DIR$/dharatest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/distribution/distribution.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/distribution/distribution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/integration-tests/integration-tests.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/integration-tests/integration-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/registry/registry.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/registry/registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/rest/rest.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/rest/rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/samples/airavata-client/create-application/samples-create-application.iml" filepath="$PROJECT_DIR$/../../../trunk/samples/airavata-client/create-application/samples-create-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/samples/airavata-client/workflow-run/samples-workflow-run.iml" filepath="$PROJECT_DIR$/../../../trunk/samples/airavata-client/workflow-run/samples-workflow-run.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../trunk/modules/test-suite/test-suite.iml" filepath="$PROJECT_DIR$/../../../trunk/modules/test-suite/test-suite.iml" />
     </modules>
   </component>
 </project>

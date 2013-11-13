@@ -24,6 +24,6 @@ public class WPS52NorthUploadClassTest {
 
     @Test
     public void testRunWorkflow() throws Exception {
-        wps52Manager.uploadClass(null,null);
+        //wps52Manager.uploadClass(null,null);
     }
 }

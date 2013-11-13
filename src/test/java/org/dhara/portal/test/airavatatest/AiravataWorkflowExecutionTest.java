@@ -2,16 +2,21 @@ package org.dhara.portal.test.airavatatest;
 
 import junit.framework.Assert;
 import org.apache.airavata.registry.api.impl.WorkflowExecutionDataImpl;
+import org.apache.airavata.registry.api.workflow.ExperimentData;
 import org.apache.airavata.registry.api.workflow.InputData;
 import org.apache.airavata.registry.api.workflow.NodeExecutionData;
 import org.apache.airavata.registry.api.workflow.OutputData;
+import org.apache.airavata.workflow.model.wf.Workflow;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertTrue;
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,7 +25,9 @@ import static junit.framework.Assert.assertNotNull;
  * Time: 1:58 PM
  * To change this template use File | Settings | File Templates.
  */
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class AiravataWorkflowExecutionTest {
+
     WorkflowManager workflowManager;
     @Before
     public void setUp() throws Exception {
@@ -29,7 +36,13 @@ public class AiravataWorkflowExecutionTest {
     }
 
     @Test
-    public void testRunWorkflow() throws Exception {
+    public void a_getWorkflow() throws Exception {
+        Workflow workflow=workflowManager.getWorkflow("EchoWorkflow");
+        assertNotNull(workflow);
+    }
+
+    @Test
+    public void b_testRunWorkflow() throws Exception {
         String input = null;
         String output = null;
         for (WorkflowExecutionDataImpl executionDataImpl : workflowManager.runWorkflow()) {
@@ -50,5 +63,34 @@ public class AiravataWorkflowExecutionTest {
         assertEquals(input, output);
     }
 
+    @Test
+    public void c_getAllWorkflows() throws Exception {
+        List<Workflow> workflows=workflowManager.getAllWorkflows();
+        boolean workflowsCount=false;
+        if(workflows.size()>0) {
+            workflowsCount=true;
+        }
+        assertTrue(workflowsCount);
+    }
+
+    @Test
+    public void d_getExperimentData() throws Exception {
+        List<ExperimentData>  experimentDatas=workflowManager.getExperimentData();
+        boolean experimentsCount=false;
+        if(experimentDatas.size()>0) {
+            experimentsCount=true;
+        }
+        assertTrue(experimentsCount);
+    }
+
+    @Test
+    public void e_getNodeExecutionData() throws Exception {
+        List<NodeExecutionData> nodeExecutionDatas=workflowManager.getWorkflowExperimentData(workflowManager.getExperimentId());
+        boolean nodeExecutionDataCount=false;
+        if(nodeExecutionDatas.size()>0) {
+            nodeExecutionDataCount=true;
+        }
+        assertTrue(nodeExecutionDataCount);
+    }
 
 }

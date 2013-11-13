@@ -38,7 +38,9 @@ import org.apache.airavata.registry.api.PasswordCallback;
 import org.apache.airavata.registry.api.exception.worker.ExperimentLazyLoadedException;
 import org.apache.airavata.registry.api.impl.WorkflowExecutionDataImpl;
 import org.apache.airavata.registry.api.workflow.ExperimentData;
+import org.apache.airavata.registry.api.workflow.NodeExecutionData;
 import org.apache.airavata.rest.client.PasswordCallbackImpl;
+import org.apache.airavata.workflow.model.wf.Workflow;
 import org.apache.airavata.workflow.model.wf.WorkflowData;
 import org.apache.airavata.workflow.model.wf.WorkflowInput;
 import org.dhara.portal.test.exception.PortalException;
@@ -63,6 +65,8 @@ public class WorkflowManager {
     private static AiravataAPI airavataAPI;
     private PasswordCallback passwordCallback;
     String workflowName = "EchoWorkflow";
+
+    private String experimentId;
     private static WorkflowManager workflowManager;
 
     public static WorkflowManager getInstance() throws PortalException, AiravataAPIInvocationException, URISyntaxException {
@@ -99,10 +103,10 @@ public class WorkflowManager {
         workflowInputs.add(workflowInput);
         // Now inputs are set properly to the workflow, now we are about to run the workflow(submit the workflow run to
         // intepreterService)
-        String result = airavataAPI.getExecutionManager().runExperiment(workflowName, workflowInputs);
-        MonitorWorkflow.monitor(result);
-        airavataAPI.getExecutionManager().waitForExperimentTermination(result);
-        ExperimentData experimentData = airavataAPI.getProvenanceManager().getExperimentData(result);
+        setExperimentId(airavataAPI.getExecutionManager().runExperiment(workflowName, workflowInputs));
+        MonitorWorkflow.monitor(getExperimentId());
+        airavataAPI.getExecutionManager().waitForExperimentTermination(getExperimentId());
+        ExperimentData experimentData = airavataAPI.getProvenanceManager().getExperimentData(getExperimentId());
         List<WorkflowExecutionDataImpl> workflowInstanceData = experimentData.getWorkflowExecutionDataList();
         return workflowInstanceData;
     }
@@ -149,5 +153,40 @@ public class WorkflowManager {
             buffer.append(line);
         }
         return buffer.toString();
+    }
+
+    public List<Workflow> getAllWorkflows() throws AiravataAPIInvocationException {
+        return airavataAPI.getWorkflowManager().getWorkflows();
+    }
+
+    public List<ExperimentData> getExperimentData() throws PortalException, AiravataAPIInvocationException {
+        List<ExperimentData> experimentByUser = airavataAPI.getProvenanceManager().getExperimentDataList();
+        return experimentByUser;
+    }
+
+    public Workflow getWorkflow(String identifier) throws PortalException {
+        Workflow workflow = null;
+        org.apache.airavata.client.api.WorkflowManager workflowManager=  airavataAPI.getWorkflowManager();
+        try {
+            workflow=workflowManager.getWorkflow(identifier);
+        } catch (AiravataAPIInvocationException e) {
+            e.printStackTrace();
+        }
+        return workflow;
+    }
+
+    public List<NodeExecutionData> getWorkflowExperimentData(String experimentId) throws PortalException, AiravataAPIInvocationException,
+            ExperimentLazyLoadedException {
+        ExperimentData data = airavataAPI.getProvenanceManager().getExperimentData(experimentId);
+        List<NodeExecutionData> nodeData = data.getNodeDataList();
+        return nodeData;
+    }
+
+    public String getExperimentId() {
+        return experimentId;
+    }
+
+    public void setExperimentId(String experimentId) {
+        this.experimentId = experimentId;
     }
 }
