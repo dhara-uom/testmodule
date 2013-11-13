@@ -21,9 +21,6 @@
 
 package org.dhara.portal.test.airavatatest;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
 import org.apache.airavata.client.AiravataAPIFactory;
 import org.apache.airavata.client.api.AiravataAPI;
 import org.apache.airavata.client.api.AiravataAPIInvocationException;
@@ -32,6 +29,9 @@ import org.apache.airavata.rest.client.PasswordCallbackImpl;
 import org.apache.airavata.ws.monitor.Monitor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class MonitorWorkflow {
     private static final Logger log = LoggerFactory.getLogger(MonitorWorkflow.class);

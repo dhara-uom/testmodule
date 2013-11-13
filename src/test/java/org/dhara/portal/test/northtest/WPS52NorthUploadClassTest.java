@@ -3,11 +3,6 @@ package org.dhara.portal.test.northtest;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.List;
-
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
-
 /**
  * Created with IntelliJ IDEA.
  * User: harsha

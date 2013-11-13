@@ -1,6 +1,5 @@
 package org.dhara.portal.test.airavatatest;
 
-import junit.framework.Assert;
 import org.apache.airavata.registry.api.impl.WorkflowExecutionDataImpl;
 import org.apache.airavata.registry.api.workflow.ExperimentData;
 import org.apache.airavata.registry.api.workflow.InputData;
@@ -14,9 +13,7 @@ import org.junit.runners.MethodSorters;
 
 import java.util.List;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.*;
 
 /**
  * Created with IntelliJ IDEA.
