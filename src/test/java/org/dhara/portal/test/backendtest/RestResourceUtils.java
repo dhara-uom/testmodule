@@ -8,5 +8,6 @@ package org.dhara.portal.test.backendtest;
  * To change this template use File | Settings | File Templates.
  */
 public class RestResourceUtils {
-    public static final String EXPERIMENTDATA_RESOURCE="/experimentdata";
+    public static final String EXPERIMENTDATA_RESOURCE="/restServices/experimentData";
+    public static final String WORKFLOWDATA_RESOURCE="/restServices/workflowData";
 }

@@ -3,11 +3,12 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="IdProvider" IDEtalkID="010F923303A6D240D1A9513078C21FA0" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../../../trunk/pom.xml" />
+        <option value="$USER_HOME$/trunk/pom.xml" />
       </list>
     </option>
   </component>

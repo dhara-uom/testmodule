@@ -13,31 +13,6 @@
     <file url="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52Manager.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPS52NorthConfig.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/java/org/dhara/portal/test/northtest/WPSNorthServiceConstants.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/airavata-client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/commons" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/credential-store" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/distribution" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/gfac-core" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/integration-tests" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/registry" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/rest" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/security" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/test-suite" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/workflow-model" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-component" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-component-node" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-core" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/ws-messenger" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/modules/xbaya-gui" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/samples/airavata-client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/samples/airavata-client/create-application" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/samples/airavata-client/workflow-run" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/samples/complex-math-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/samples/levenshtein-distance-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/samples/simple-math-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../trunk/tools" charset="UTF-8" />
   </component>
 </project>
 
