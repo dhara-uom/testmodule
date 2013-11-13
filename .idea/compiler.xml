@@ -22,23 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="airavata-client-api" />
-        <module name="airavata-complex-math-service" />
-        <module name="airavata-credential-store" />
-        <module name="airavata-embedded-tomcat" />
-        <module name="airavata-gfac-core" />
-        <module name="airavata-levenshtein-distance-service" />
-        <module name="airavata-security" />
-        <module name="airavata-simple-math-service" />
-        <module name="airavata-workflow-model-component" />
-        <module name="airavata-workflow-model-component-node" />
-        <module name="airavata-workflow-model-core" />
-        <module name="airavata-xbaya-gui" />
         <module name="dharatest" />
-        <module name="integration-tests" />
-        <module name="samples-create-application" />
-        <module name="samples-workflow-run" />
-        <module name="test-suite" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

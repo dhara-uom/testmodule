@@ -41,7 +41,7 @@ public class RestServiceConfig {
     private void setDefaultConfig() throws PortalException {
         this.setPassword("admin");
         this.setUserName("admin");
-        this.setServerUrl("http://localhost:8090/portal");
+        this.setServerUrl("http://localhost:8082/portal");
     }
 
     private void setBackendConfiguration() throws PortalException {

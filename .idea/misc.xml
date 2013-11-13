@@ -3,12 +3,42 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="IdProvider" IDEtalkID="010F923303A6D240D1A9513078C21FA0" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../../../trunk/pom.xml" />
+        <option value="$USER_HOME$/trunk/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../../../trunk/modules/airavata-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/commons/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/credential-store/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/distribution/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/gfac-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/integration-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/registry/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/rest/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/security/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/server/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/test-suite/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/workflow-model/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-component-node/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-component/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/workflow-model/workflow-model-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/ws-messenger/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/modules/xbaya-gui/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/samples/airavata-client/create-application/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/samples/airavata-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/samples/airavata-client/workflow-run/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/samples/complex-math-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/samples/levenshtein-distance-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/samples/simple-math-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../trunk/tools/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">

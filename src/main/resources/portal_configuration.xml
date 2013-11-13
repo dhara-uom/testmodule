@@ -16,9 +16,9 @@
     </airavata-configuration>
     <backend-configuration>
         <server>
-            <username>http://localhost:8090/portal</username>
+            <server-url>http://localhost:8082/portal</server-url>
             <password>admin</password>
-            <server-url>admin</server-url>
+            <username>admin</username>
         </server>
     </backend-configuration>
     <wps-52north-configuration>
