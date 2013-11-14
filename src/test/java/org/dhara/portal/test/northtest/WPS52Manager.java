@@ -29,11 +29,11 @@ public class WPS52Manager {
         }
     }
 
-    public void uploadClass(String generatedClass,String className) throws IOException {
+    public String uploadClass(String generatedClass,String className) throws IOException {
 
         String defaultPackage = WPS52NorthConfig.defaultPackage;
         String classNameWithPackages = defaultPackage.substring(8,defaultPackage.length()-1)+"."+className;
-
+        System.out.println("class name with pckg is"+classNameWithPackages);
 
         String encodedClass = URLEncoder.encode(generatedClass, WPSNorthServiceConstants.UTF8);
         String encodedClassName=URLEncoder.encode(classNameWithPackages, WPSNorthServiceConstants.UTF8);
@@ -42,7 +42,7 @@ public class WPS52Manager {
 
         URL obj = new URL(wps52NorthConfig.getServerUrl());
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-        con.setDoOutput(true);
+                con.setDoOutput(true);
         con.setDoInput(true);
         // optional default is GET
         con.setRequestMethod("POST");
@@ -74,10 +74,10 @@ public class WPS52Manager {
             response.append(inputLine);
         }
         in.close();
-
+        return response.toString();
         /*//print result
-        System.out.println(response.toString());*/
-
+       /* System.out.println(response.toString());*/
+            //return response.toString();
     }
 
     public WPS52NorthConfig getWps52NorthConfig() {

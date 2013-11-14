@@ -24,6 +24,7 @@ public class WPS52NorthConfig {
     private  String userName;
     private  String password;
     public static final String defaultPackage ="package org.dhara.wps;";
+    private String testURL;
 
 
     public WPS52NorthConfig() throws PortalException {
@@ -35,7 +36,7 @@ public class WPS52NorthConfig {
     }
 
     private boolean isWPS52NorthConfigurationExists() {
-        File file=new File("src/main/resources/portal_configuration.xml");
+        File file=new File("wps-52north.xml");
         return file.exists();
     }
 
@@ -43,10 +44,11 @@ public class WPS52NorthConfig {
         this.setPassword("admin");
         this.setUserName("admin");
         this.setServerUrl("http://localhost:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/DynamicDeployProcesstest.jsp");
+        this.setTestURL("http://localhost:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/TestDeploy.jsp");
     }
 
     private void set52NorthConfiguration() throws PortalException {
-        File file= new File("src/main/resources/portal_configuration.xml");
+        File file= new File(System.getProperty("catalina.base")+File.separator+"webapps"+File.separator+"portal"+File.separator+"WEB-INF"+File.separator+"conf"+File.separator+"wps-52north.xml");
         FileInputStream fis;
         XMLInputFactory xif;
         XMLStreamReader reader;
@@ -62,11 +64,11 @@ public class WPS52NorthConfig {
             throw new PortalException(e.getMessage(),e);
         }
         OMElement documentElement= builder.getDocumentElement();
-        OMElement northConfiguration=documentElement.getFirstChildWithName(new QName("wps-52north-configuration"));
-        OMElement server=northConfiguration.getFirstElement();
-        this.setPassword(server.getFirstChildWithName(new QName("username")).getText().toString());
-        this.setUserName(server.getFirstChildWithName(new QName("password")).getText().toString());
-        this.setServerUrl(server.getFirstChildWithName(new QName("server-url")).getText().toString());
+        OMElement airavataConfiguration=documentElement.getFirstElement();
+        OMElement server=airavataConfiguration.getFirstElement();
+        this.setPassword(server.getFirstChildWithName(new QName("username")).toString());
+        this.setUserName(server.getFirstChildWithName(new QName("password")).toString());
+        this.setServerUrl(server.getFirstChildWithName(new QName("server-url")).toString());
     }
 
     public String getServerUrl() {
@@ -93,4 +95,11 @@ public class WPS52NorthConfig {
         this.password = password;
     }
 
+    public String getTestURL() {
+        return testURL;
+    }
+
+    public void setTestURL(String testURL) {
+        this.testURL = testURL;
+    }
 }
