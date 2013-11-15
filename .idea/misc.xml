@@ -3,12 +3,16 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../portal" />
+  </component>
   <component name="IdProvider" IDEtalkID="010F923303A6D240D1A9513078C21FA0" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$USER_HOME$/trunk/pom.xml" />
+        <option value="$PROJECT_DIR$/../portal/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -48,7 +48,7 @@ public class WPS52NorthConfig {
     }
 
     private void set52NorthConfiguration() throws PortalException {
-        File file= new File(System.getProperty("catalina.base")+File.separator+"webapps"+File.separator+"portal"+File.separator+"WEB-INF"+File.separator+"conf"+File.separator+"wps-52north.xml");
+        File file= new File("src/main/resources/portal_configuration.xml");
         FileInputStream fis;
         XMLInputFactory xif;
         XMLStreamReader reader;
@@ -63,12 +63,13 @@ public class WPS52NorthConfig {
         } catch (XMLStreamException e) {
             throw new PortalException(e.getMessage(),e);
         }
+
         OMElement documentElement= builder.getDocumentElement();
-        OMElement airavataConfiguration=documentElement.getFirstElement();
-        OMElement server=airavataConfiguration.getFirstElement();
-        this.setPassword(server.getFirstChildWithName(new QName("username")).toString());
-        this.setUserName(server.getFirstChildWithName(new QName("password")).toString());
-        this.setServerUrl(server.getFirstChildWithName(new QName("server-url")).toString());
+        OMElement northConfiguration=documentElement.getFirstChildWithName(new QName("wps-52north-configuration"));
+        OMElement nserver=northConfiguration.getFirstElement();
+        this.setPassword(nserver.getFirstChildWithName(new QName("username")).getText().toString());
+        this.setUserName(nserver.getFirstChildWithName(new QName("password")).getText().toString());
+        this.setServerUrl(nserver.getFirstChildWithName(new QName("server-url")).getText().toString());
     }
 
     public String getServerUrl() {

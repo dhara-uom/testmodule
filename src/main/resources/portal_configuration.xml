@@ -6,7 +6,7 @@
             <password>admin</password>
             <message-box></message-box>
             <gateway-name>default</gateway-name>
-            <port>8080</port>
+            <port>8081</port>
             <server-context>airavata-registry</server-context>
             <server-url>localhost</server-url>
             <broker></broker>
@@ -16,7 +16,7 @@
     </airavata-configuration>
     <backend-configuration>
         <server>
-            <server-url>http://localhost:8082/portal</server-url>
+            <server-url>http://localhost:8090/portal</server-url>
             <password>admin</password>
             <username>admin</username>
         </server>
@@ -28,4 +28,11 @@
             <server-url>http://localhost:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/DynamicDeployProcesstest.jsp</server-url>
         </server>
     </wps-52north-configuration>
+    <portal-configuration>
+        <server>
+            <username>canonical</username>
+            <password>canonical</password>
+            <server-url>http://localhost:8080/portal</server-url>
+        </server>
+    </portal-configuration>
 </server-configurations>

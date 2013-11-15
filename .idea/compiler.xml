@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="dharatest" />
+        <module name="portal" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -46,6 +47,7 @@
       <module name="commons" target="1.6" />
       <module name="distribution" target="1.6" />
       <module name="integration-tests" target="1.6" />
+      <module name="portal" target="1.5" />
       <module name="registry" target="1.6" />
       <module name="rest" target="1.6" />
       <module name="samples-create-application" target="1.6" />

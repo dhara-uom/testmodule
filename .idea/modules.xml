@@ -23,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/dharatest.iml" filepath="$PROJECT_DIR$/dharatest.iml" />
       <module fileurl="file://$USER_HOME$/trunk/modules/distribution/distribution.iml" filepath="$USER_HOME$/trunk/modules/distribution/distribution.iml" />
       <module fileurl="file://$USER_HOME$/trunk/modules/integration-tests/integration-tests.iml" filepath="$USER_HOME$/trunk/modules/integration-tests/integration-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../portal/portal.iml" filepath="$PROJECT_DIR$/../portal/portal.iml" />
       <module fileurl="file://$USER_HOME$/trunk/modules/registry/registry.iml" filepath="$USER_HOME$/trunk/modules/registry/registry.iml" />
       <module fileurl="file://$USER_HOME$/trunk/modules/rest/rest.iml" filepath="$USER_HOME$/trunk/modules/rest/rest.iml" />
       <module fileurl="file://$USER_HOME$/trunk/samples/airavata-client/create-application/samples-create-application.iml" filepath="$USER_HOME$/trunk/samples/airavata-client/create-application/samples-create-application.iml" />

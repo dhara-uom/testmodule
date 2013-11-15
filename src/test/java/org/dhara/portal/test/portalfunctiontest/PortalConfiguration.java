@@ -1,4 +1,4 @@
-package org.dhara.portal.test.backendtest;
+package org.dhara.portal.test.portalfunctiontest;
 
 import org.apache.axiom.om.OMElement;
 import org.apache.axiom.om.impl.builder.StAXOMBuilder;
@@ -15,33 +15,33 @@ import java.io.FileNotFoundException;
 /**
  * Created with IntelliJ IDEA.
  * User: harsha
- * Date: 10/27/13
- * Time: 9:51 PM
+ * Date: 11/15/13
+ * Time: 2:32 PM
  * To change this template use File | Settings | File Templates.
  */
-public class RestServiceConfig {
+public class PortalConfiguration {
 
     private  String serverUrl;
     private  String userName;
     private  String password;
 
-    public RestServiceConfig() throws PortalException {
-        if(isBackendConfigurationExists()) {
+    public PortalConfiguration() throws PortalException {
+        if(isPortalConfigurationExists()) {
             setBackendConfiguration();
         } else {
             setDefaultConfig();
         }
     }
 
-    private boolean isBackendConfigurationExists() {
+    private boolean isPortalConfigurationExists() {
         File file=new File("src/main/resources/portal_configuration.xml");
         return file.exists();
     }
 
     private void setDefaultConfig() throws PortalException {
-        this.setPassword("admin");
-        this.setUserName("admin");
-        this.setServerUrl("http://localhost:8090/portal");
+        this.setPassword("canonical");
+        this.setUserName("canonical");
+        this.setServerUrl("http://localhost:8080/portal");
     }
 
     private void setBackendConfiguration() throws PortalException {
@@ -61,7 +61,7 @@ public class RestServiceConfig {
             throw new PortalException(e.getMessage(),e);
         }
         OMElement documentElement= builder.getDocumentElement();
-        OMElement backendConfiguration=documentElement.getFirstChildWithName(new QName("backend-configuration"));
+        OMElement backendConfiguration=documentElement.getFirstChildWithName(new QName("portal-configuration"));
         OMElement server=backendConfiguration.getFirstElement();
         this.setPassword(server.getFirstChildWithName(new QName("username")).getText().toString());
         this.setUserName(server.getFirstChildWithName(new QName("password")).getText().toString());
@@ -91,5 +91,4 @@ public class RestServiceConfig {
     public void setPassword(String password) {
         this.password = password;
     }
-
 }
