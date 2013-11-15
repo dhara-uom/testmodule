@@ -1,9 +1,12 @@
 package org.dhara.portal.test.portalfunctiontest;
 
 import org.dhara.portal.test.exception.PortalException;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static junit.framework.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
@@ -24,20 +27,20 @@ public class PortalTest {
     @Test
     public void  getWorkflowsTest() {
         String response=portalRestClient.getResponse("/app/admin/workflows");
-        assertNotNull(response);
+        Assert.assertTrue(response.contains("Workflows"));
     }
 
     @Test
     public void getExperimentsTest() {
         String response=portalRestClient.getResponse("/app/admin/experiments");
-        assertNotNull(response);
+        assertTrue(response.contains("Experiments"));
     }
 
     @Test
     public void deployWorkflowTest() {
         String workflowId="EchoWorkflow";
         String response=portalRestClient.getResponse("/app/admin/workflow/deploy?workflowId="+workflowId);
-        assertNotNull(response);
+        assertNotNull(response.contains("Workflows"));
 
     }
 
