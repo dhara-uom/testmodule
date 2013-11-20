@@ -6,5 +6,7 @@ WPS and overall portal functionalty.
 Build Instructions
 
 1) Resources folder in test module contains the whole configuration of portal
+
 2) You need to change the configuration files according to your setup
+
 3) After setup  the configuration, mvn clean install will run all the test in the test module.
