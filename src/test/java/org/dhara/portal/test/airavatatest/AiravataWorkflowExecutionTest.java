@@ -82,6 +82,7 @@ public class AiravataWorkflowExecutionTest {
 
     @Test
     public void e_getNodeExecutionData() throws Exception {
+        workflowManager.runWorkflow();
         List<NodeExecutionData> nodeExecutionDatas=workflowManager.getWorkflowExperimentData(workflowManager.getExperimentId());
         boolean nodeExecutionDataCount=false;
         if(nodeExecutionDatas.size()>0) {

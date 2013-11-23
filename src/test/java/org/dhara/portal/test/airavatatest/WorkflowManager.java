@@ -95,9 +95,9 @@ public class WorkflowManager {
             ExperimentLazyLoadedException, PortalException, DescriptorRecordAlreadyExistsException {
         // Now workflow has saved, Now we have to set inputs
         List<WorkflowInput> workflowInputs = new ArrayList<WorkflowInput>();
-        String name = "input";
+        String name = "Input";
         String type = "String";
-        String value = "echo";
+        String value = "Output=echo";
         WorkflowInput workflowInput = new WorkflowInput(name, (type == null || type.isEmpty()) ? "String" : type, null,
                 value, false);
         workflowInputs.add(workflowInput);
@@ -187,6 +187,8 @@ public class WorkflowManager {
     }
 
     public void setExperimentId(String experimentId) {
+        if(experimentId!=null){
         this.experimentId = experimentId;
+        }
     }
 }

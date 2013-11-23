@@ -53,7 +53,7 @@ public class AiravataConfig {
         this.setPassword("admin");
         this.setUserName("admin");
         this.setGatewayName("default");
-        this.setPort(8001);
+        this.setPort(8081);
         this.setServerContextName("airavata-registry");
         this.setServerUrl("localhost");
     }

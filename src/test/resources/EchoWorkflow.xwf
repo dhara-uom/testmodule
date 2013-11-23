@@ -26,7 +26,7 @@
       <xgr:y>58</xgr:y>
       <xgr:config>
         <xgr:dataType>{http://www.w3.org/2001/XMLSchema}any</xgr:dataType>
-        <xgr:value>hhhhhhhh</xgr:value>
+        <xgr:value></xgr:value>
         <xgr:visibility>true</xgr:visibility>
       </xgr:config>
     </xgr:node>

@@ -26,6 +26,7 @@
             <username>admin</username>
             <password>admin</password>
             <server-url>http://localhost:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/DynamicDeployProcesstest.jsp</server-url>
+            <test-url>http://localhost:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/DynamicDeployProcesstest.jsp</test-url>
         </server>
     </wps-52north-configuration>
     <portal-configuration>
