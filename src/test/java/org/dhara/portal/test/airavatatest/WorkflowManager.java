@@ -1,23 +1,22 @@
-/*
+/***********************************************************************************************************************
  *
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
+ * Dhara- A Geoscience Gateway
+ * ==========================================
  *
- *   http://www.apache.org/licenses/LICENSE-2.0
+ * Copyright (C) 2013 by Dhara
  *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
+ ***********************************************************************************************************************
  *
- */
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ *
+ ***********************************************************************************************************************/
 
 package org.dhara.portal.test.airavatatest;
 
@@ -47,7 +46,11 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Singleton test helper class for check functionality of hosted Apache Airavata through its' API
+ */
 public class WorkflowManager {
+
     private static final Logger log = LoggerFactory.getLogger(WorkflowManager.class);
 
     private static int port;
@@ -76,6 +79,8 @@ public class WorkflowManager {
            return workflowManager;
        }
     }
+
+    //Create Apache Airavata API object from configuration
     private WorkflowManager() throws PortalException, URISyntaxException, AiravataAPIInvocationException {
         AiravataConfig airavataConfig=new AiravataConfig();
         // creating airavata client object //
@@ -91,6 +96,16 @@ public class WorkflowManager {
                 passwordCallback);
     }
 
+    /**
+     * Run workflow through Apache Airavata client API
+     * @return
+     * @throws AiravataAPIInvocationException
+     * @throws IOException
+     * @throws URISyntaxException
+     * @throws ExperimentLazyLoadedException
+     * @throws PortalException
+     * @throws DescriptorRecordAlreadyExistsException
+     */
     public List<WorkflowExecutionDataImpl> runWorkflow() throws AiravataAPIInvocationException, IOException, URISyntaxException,
             ExperimentLazyLoadedException, PortalException, DescriptorRecordAlreadyExistsException {
         // Now workflow has saved, Now we have to set inputs
@@ -127,6 +142,12 @@ public class WorkflowManager {
         return password;
     }
 
+    /**
+     * Upload a new dummy workflow to Airavata if Echo workflow not exists
+     * @throws AiravataAPIInvocationException
+     * @throws IOException
+     * @throws DescriptorRecordAlreadyExistsException
+     */
     public void uploadWorkflow() throws AiravataAPIInvocationException, IOException, DescriptorRecordAlreadyExistsException {
         // Saving workflow method, workflow file has the workflow Name set to EchoSample, so when we use saveWorkflow
         // method it will
@@ -144,6 +165,11 @@ public class WorkflowManager {
         airavataAPI.getWorkflowManager().addWorkflow(getWorkflowComposeContent());
     }
 
+    /**
+     * Get dummy workflow details
+     * @return
+     * @throws IOException
+     */
     protected static String getWorkflowComposeContent() throws IOException {
         System.out.println((new File(".")).getAbsolutePath());
         BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/EchoWorkflow.xwf"));
@@ -155,15 +181,33 @@ public class WorkflowManager {
         return buffer.toString();
     }
 
+
+    /**
+     * Get all workflows through Apache Airavata's client API
+     * @return
+     * @throws AiravataAPIInvocationException
+     */
     public List<Workflow> getAllWorkflows() throws AiravataAPIInvocationException {
         return airavataAPI.getWorkflowManager().getWorkflows();
     }
 
+    /**
+     * Get experiment data through Apache AIravata's client API
+     * @return
+     * @throws PortalException
+     * @throws AiravataAPIInvocationException
+     */
     public List<ExperimentData> getExperimentData() throws PortalException, AiravataAPIInvocationException {
         List<ExperimentData> experimentByUser = airavataAPI.getProvenanceManager().getExperimentDataList();
         return experimentByUser;
     }
 
+    /**
+     * Get specified workflow through Apache Airavata's client API
+     * @param identifier
+     * @return
+     * @throws PortalException
+     */
     public Workflow getWorkflow(String identifier) throws PortalException {
         Workflow workflow = null;
         org.apache.airavata.client.api.WorkflowManager workflowManager=  airavataAPI.getWorkflowManager();
@@ -175,6 +219,14 @@ public class WorkflowManager {
         return workflow;
     }
 
+    /**
+     * Get experiment data through Apache Airavata's client API
+     * @param experimentId
+     * @return
+     * @throws PortalException
+     * @throws AiravataAPIInvocationException
+     * @throws ExperimentLazyLoadedException
+     */
     public List<NodeExecutionData> getWorkflowExperimentData(String experimentId) throws PortalException, AiravataAPIInvocationException,
             ExperimentLazyLoadedException {
         ExperimentData data = airavataAPI.getProvenanceManager().getExperimentData(experimentId);

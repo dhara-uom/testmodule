@@ -7,11 +7,7 @@ import com.sun.jersey.api.client.filter.HTTPBasicAuthFilter;
 import org.dhara.portal.test.exception.PortalException;
 
 /**
- * Created with IntelliJ IDEA.
- * User: harsha
- * Date: 10/27/13
- * Time: 9:50 PM
- * To change this template use File | Settings | File Templates.
+ * Rest client for access portal resources
  */
 public class PortalRestClient {
 

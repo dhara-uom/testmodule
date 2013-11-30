@@ -1,3 +1,22 @@
+/***********************************************************************************************************************
+ *
+ * Dhara- A Geoscience Gateway
+ * ==========================================
+ *
+ * Copyright (C) 2013 by Dhara
+ *
+ ***********************************************************************************************************************
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ *
+ ***********************************************************************************************************************/
 package org.dhara.portal.test.airavatatest;
 
 import org.apache.airavata.registry.api.impl.WorkflowExecutionDataImpl;
@@ -16,11 +35,7 @@ import java.util.List;
 import static junit.framework.Assert.*;
 
 /**
- * Created with IntelliJ IDEA.
- * User: harsha
- * Date: 11/12/13
- * Time: 1:58 PM
- * To change this template use File | Settings | File Templates.
+ * The Apache Airavatas' function test class
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class AiravataWorkflowExecutionTest {
@@ -32,12 +47,14 @@ public class AiravataWorkflowExecutionTest {
         workflowManager.uploadWorkflow();
     }
 
+    //Test method for check the functionality of get a specified workflow(echo workflow) through Apache Airavata API
     @Test
     public void a_getWorkflow() throws Exception {
         Workflow workflow=workflowManager.getWorkflow("EchoWorkflow");
         assertNotNull(workflow);
     }
 
+    //Test method for check the functionality of run specified workflow and check the execution with received results (Echo response)
     @Test
     public void b_testRunWorkflow() throws Exception {
         String input = null;
@@ -60,6 +77,7 @@ public class AiravataWorkflowExecutionTest {
         assertEquals(input, output);
     }
 
+    //Test method for check the functionality get all workflows through Apache Airavata API
     @Test
     public void c_getAllWorkflows() throws Exception {
         List<Workflow> workflows=workflowManager.getAllWorkflows();
@@ -70,6 +88,7 @@ public class AiravataWorkflowExecutionTest {
         assertTrue(workflowsCount);
     }
 
+    //Test method for check the functionality of get experiment data of a workflow execution
     @Test
     public void d_getExperimentData() throws Exception {
         List<ExperimentData>  experimentDatas=workflowManager.getExperimentData();
@@ -80,6 +99,7 @@ public class AiravataWorkflowExecutionTest {
         assertTrue(experimentsCount);
     }
 
+    //Test method for check the functionality get node execution data of a executed workflow
     @Test
     public void e_getNodeExecutionData() throws Exception {
         workflowManager.runWorkflow();

@@ -1,6 +1,5 @@
 package org.dhara.portal.test.backendtest;
 
-import junit.framework.Assert;
 import org.dhara.portal.test.exception.PortalException;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,23 +9,21 @@ import java.io.IOException;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Created with IntelliJ IDEA.
- * User: harsha
- * Date: 11/15/13
- * Time: 7:06 PM
- * To change this template use File | Settings | File Templates.
+ * Test class for check functionality of temporary backend rest service to access Apache Airavata
  */
 public class BackendWorkflowExecutionTest {
     private RestServiceConfig restServiceConfig;
 
     private RestClient restClient;
 
+    //Initialization
     @Before
     public void init() throws IOException, PortalException {
         setRestClient(new RestClient());
         restServiceConfig = new RestServiceConfig();
     }
 
+    //Execute a workflow through backend web application
     @Test
     public void executeWorkflowTest() {
         String workflowId="EchoWorkflow";

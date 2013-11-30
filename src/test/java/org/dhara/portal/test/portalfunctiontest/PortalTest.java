@@ -1,3 +1,22 @@
+/***********************************************************************************************************************
+ *
+ * Dhara- A Geoscience Gateway
+ * ==========================================
+ *
+ * Copyright (C) 2013 by Dhara
+ *
+ ***********************************************************************************************************************
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
+ *
+ ***********************************************************************************************************************/
 package org.dhara.portal.test.portalfunctiontest;
 
 import org.dhara.portal.test.exception.PortalException;
@@ -10,11 +29,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Created with IntelliJ IDEA.
- * User: harsha
- * Date: 11/15/13
- * Time: 2:00 PM
- * To change this template use File | Settings | File Templates.
+ * The test class
  */
 public class PortalTest {
     PortalRestClient portalRestClient;
@@ -24,18 +39,21 @@ public class PortalTest {
         portalRestClient=new PortalRestClient();
     }
 
+    //Test for check whether workflows are listing fine in portal side
     @Test
     public void  getWorkflowsTest() {
         String response=portalRestClient.getResponse("/app/admin/workflows");
         Assert.assertTrue(response.contains("Workflows"));
     }
 
+    //Test for check whether experiments are listing fine in portal side
     @Test
     public void getExperimentsTest() {
         String response=portalRestClient.getResponse("/app/admin/experiments");
         assertTrue(response.contains("Experiments"));
     }
 
+    //Test for workflow deployment through portal
     @Test
     public void deployWorkflowTest() {
         String workflowId="EchoWorkflow";
