@@ -89,7 +89,7 @@ public class WPS52NorthConfig {
         this.setPassword(nserver.getFirstChildWithName(new QName("username")).getText().toString());
         this.setUserName(nserver.getFirstChildWithName(new QName("password")).getText().toString());
         this.setServerUrl(nserver.getFirstChildWithName(new QName("server-url")).getText().toString());
-        this.setServerUrl(nserver.getFirstChildWithName(new QName("test-url")).getText().toString());
+        this.setTestURL(nserver.getFirstChildWithName(new QName("test-url")).getText().toString());
     }
 
     public String getServerUrl() {

@@ -6,9 +6,9 @@
             <password>admin</password>
             <message-box></message-box>
             <gateway-name>default</gateway-name>
-            <port>8081</port>
+            <port>8080</port>
             <server-context>airavata-registry</server-context>
-            <server-url>localhost</server-url>
+            <server-url>54.200.198.155</server-url>
             <broker></broker>
             <jcr></jcr>
             <gfac></gfac>
@@ -16,7 +16,7 @@
     </airavata-configuration>
     <backend-configuration>
         <server>
-            <server-url>http://localhost:8090/portal</server-url>
+            <server-url>http://54.200.198.155:8090/portal</server-url>
             <password>admin</password>
             <username>admin</username>
         </server>
@@ -25,15 +25,15 @@
         <server>
             <username>admin</username>
             <password>admin</password>
-            <server-url>http://localhost:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/DynamicDeployProcesstest.jsp</server-url>
-            <test-url>http://localhost:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/DynamicDeployProcesstest.jsp</test-url>
+            <server-url>http://54.200.198.155:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/DynamicDeployProcesstest.jsp</server-url>
+            <test-url>http://54.200.198.155:8090/52n-wps-webapp-3.3.0-SNAPSHOT/webAdmin/DynamicDeployProcesstest.jsp</test-url>
         </server>
     </wps-52north-configuration>
     <portal-configuration>
         <server>
             <username>canonical</username>
             <password>canonical</password>
-            <server-url>http://localhost:8080/portal</server-url>
+            <server-url>http://50.17.228.1:8080/portal</server-url>
         </server>
     </portal-configuration>
 </server-configurations>
